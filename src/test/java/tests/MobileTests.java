@@ -20,7 +20,7 @@ public class MobileTests extends MobileTestBase {
         step("Переход на страницу авторизации", () ->
                 mobilePage.goToAuthorisationByEmail()
                         .checkingAuthorisationByEmail());
-        step("Попытка авторизоваться с неверными логином и паролем", () ->
+        step("Проверка, что при авторизии с неверными логином и паролем, возникает ошибка", () ->
                 mobilePage.incorrectUsernameAndPassword()
                         .checkingAuthorisationFailed());
     }

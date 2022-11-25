@@ -7,6 +7,8 @@
 ---
 - Использованный стек 
 
+- Выполняемые проверки
+
 - Как запустить тесты
 
 - Видео запуска одного из тестов
@@ -24,6 +26,12 @@
 <img src="https://molecula.gallerycdn.vsassets.io/extensions/molecula/allure-test-reports/1.1/1474455326332/Microsoft.VisualStudio.Services.Icons.Default" width="50px"/>
 <img src="https://raw.githubusercontent.com/lmaslo/Wikipedia-Mobile-Tests/8c161f04ad17515a721a1ad5de1de4b599ba4839/images/logo/Selenide.svg" width="50px"/>
 </div>
+
+### :bookmark_tabs: Выполняемые проверки:
+---
+- 	:white_check_mark: Проверка, что при авторизии с неверными логином и паролем, возникает ошибка
+- 	:white_check_mark: Проверка, что при добавлении товара в избранное, счётчик меняется
+- 	:white_check_mark: Проверка, что при добавлении товара в корзину, счётчик меняется
 
 ### :rocket: Как запустить тесты :
 ---
