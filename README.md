@@ -53,8 +53,8 @@ gradle clean test -DdeviceHost=local
 4) Ввести в командную строку терминала команду
 
 ```javascript
-gradle clean test -DdeviceHost=local
+gradle clean test -DdeviceHost=real
 ```
 
-### :chart_with_upwards_trend: Как запустить тесты :
+### :chart_with_upwards_trend: Allure отчет :
 ---
