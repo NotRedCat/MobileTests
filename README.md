@@ -2,7 +2,7 @@
 <div>
 <img src="https://media.giphy.com/media/8VkgrPdxMh0oo/giphy.gif" width="300px"/>
 </div>
----
+
 ### :woman_technologist: About Me :
 - :telescope: I’m working as a Software Engineer and contributing to frontend and backend for building web applications.
 
