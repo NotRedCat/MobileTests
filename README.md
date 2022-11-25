@@ -3,11 +3,22 @@
 <img src="https://media.giphy.com/media/8VkgrPdxMh0oo/giphy.gif" width="300px"/>
 </div>
 
-### :woman_technologist: About Me :
-- :telescope: I’m working as a Software Engineer and contributing to frontend and backend for building web applications.
+### :green_book: About Me :
+---
+- Использованный стек 
 
-- :seedling: Exploring Technical Content Writing.
+- Как запустить тесты
 
-- :zap: In my free time, I solve problems on GeeksforGeeks and read tech articles.
+- Видео запуска одного из тестов
 
-- :mailbox:How to reach me:
+### :hammer_and_wrench: Использованный стек :
+---
+<img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/androidstudio/androidstudio-original.svg" width="30px"/>
+<img src="https://seeklogo.com/images/A/appium-logo-7A2DD5B4E3-seeklogo.com.png" width="30px"/>
+<img src="https://spng.pngfind.com/pngs/s/74-744402_java-logo-png-transparent-svg-vector-freebie-supply.png" width="30px"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/IntelliJ_IDEA_Edu_Icon.svg/640px-IntelliJ_IDEA_Edu_Icon.svg.png" width="30px"/>
+<img src="https://cdn.iconscout.com/icon/free/png-256/gradle-2-1174969.png" width="30px"/>
+<img src="https://assets-global.website-files.com/5f10ed4c0ebf7221fb5661a5/5f23a7a9b70a249eed481481_Junit.png" width="30px"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="30px"/>
+<img src="https://molecula.gallerycdn.vsassets.io/extensions/molecula/allure-test-reports/1.1/1474455326332/Microsoft.VisualStudio.Services.Icons.Default" width="30px"/>
+<img src="https://raw.githubusercontent.com/lmaslo/Wikipedia-Mobile-Tests/8c161f04ad17515a721a1ad5de1de4b599ba4839/images/logo/Selenide.svg" width="30px"/>
