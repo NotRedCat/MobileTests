@@ -59,6 +59,6 @@ gradle clean test -DdeviceHost=realMobile
 ---
 ![мобильные тесты](https://user-images.githubusercontent.com/90265199/204024593-6f5b0398-0075-4267-8222-713e44a8217d.png)
 
-[gf[bvbcvx.webm](https://user-images.githubusercontent.com/90265199/208258403-5c6baebd-57dc-487b-9d53-b1c36492ec3a.webm)
+[gfbvbcvx.webm](https://user-images.githubusercontent.com/90265199/208258403-5c6baebd-57dc-487b-9d53-b1c36492ec3a.webm)
 [dgdf.webm](https://user-images.githubusercontent.com/90265199/208258381-2b338405-ba29-4b49-8739-33fb34fa2730.webm)
 [v v.webm](https://user-images.githubusercontent.com/90265199/208258415-96525f6e-b8f1-4dab-a38b-73bd70267384.webm)
