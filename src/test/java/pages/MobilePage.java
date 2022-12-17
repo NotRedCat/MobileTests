@@ -97,7 +97,7 @@ public class MobilePage {
         $(AppiumBy.id("ru.citilink:id/favorite"))
                 .click();
         $(AppiumBy.id("ru.citilink:id/favorite_products_graph"))
-                .shouldHave(attribute("content-desc", "Избранное, 1 новое уведомление"));
+                .shouldHave(attribute("content-desc", "Избранное, 1 new notification"));
         return this;
     }
 
@@ -120,12 +120,13 @@ public class MobilePage {
                 .click();
         $(AppiumBy.id("ru.citilink:id/buttonProductAddToCart"))
                 .click();
+
         return this;
     }
 
     public MobilePage checkingThatCartIsNotEmpty() {
         $(AppiumBy.id("ru.citilink:id/ordering_graph"))
-                .shouldHave(attribute("content-desc", "Корзина, 1 новое уведомление"));
+                .shouldHave(attribute("content-desc", "Корзина, 1 new notification"));
         return this;
     }
 
