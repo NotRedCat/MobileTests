@@ -59,9 +59,9 @@ gradle clean test -DdeviceHost=realMobile
 ---
 ![мобильные тесты](https://user-images.githubusercontent.com/90265199/204024593-6f5b0398-0075-4267-8222-713e44a8217d.png)
 
-https://user-images.githubusercontent.com/90265199/208261101-4773c22a-4faf-4676-b261-49b60b8315d9.mp4
-https://user-images.githubusercontent.com/90265199/208261123-5f0a2ded-6957-47b2-b37b-a7500fc49f96.mp4
-https://user-images.githubusercontent.com/90265199/208261173-3dc4b729-d730-4c15-8fe0-af356eb9ee7f.mp4
+(https://user-images.githubusercontent.com/90265199/208261101-4773c22a-4faf-4676-b261-49b60b8315d9.mp4)
+(https://user-images.githubusercontent.com/90265199/208261123-5f0a2ded-6957-47b2-b37b-a7500fc49f96.mp4)
+(https://user-images.githubusercontent.com/90265199/208261173-3dc4b729-d730-4c15-8fe0-af356eb9ee7f.mp4)
 
 
 
