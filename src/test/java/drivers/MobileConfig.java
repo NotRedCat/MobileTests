@@ -3,7 +3,7 @@ package drivers;
 import org.aeonbits.owner.Config;
 
 @Config.Sources({
-        "classpath:${deviceHost}.properties"
+        "classpath:properties/${deviceHost}.properties"
 
 })
 public interface MobileConfig extends Config {

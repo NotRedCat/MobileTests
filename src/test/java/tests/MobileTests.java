@@ -9,6 +9,7 @@ import static io.qameta.allure.Allure.step;
 
 public class MobileTests extends MobileTestBase {
     MobilePage mobilePage = new MobilePage();
+
     @Test
     void checkUnregistration() {
         step("Подтверждение города", () ->
@@ -21,7 +22,9 @@ public class MobileTests extends MobileTestBase {
                 mobilePage.goToAuthorisationByEmail()
                         .checkingAuthorisationByEmail());
         step("Проверка, что при авторизии с неверными логином и паролем, возникает ошибка", () ->
-                mobilePage.incorrectUsernameAndPassword()
+                mobilePage.setUsername(username)
+                        .setPassword(password)
+                        .clickOnTheAuthButton()
                         .checkingAuthorisationFailed());
     }
 

@@ -44,7 +44,7 @@ public class MobileDriver implements WebDriverProvider {
     }
 
     private File getApp() {
-        String appUrl = "";
+        String appUrl = "https://d.apkpure.com/b/APK/com.andromob.citilink?version=latest";
         String appPath = "src/test/resources/app/Ситилинк v2_2.11.0_Apkpure.apk";
 
         File app = new File(appPath);

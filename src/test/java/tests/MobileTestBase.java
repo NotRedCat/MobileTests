@@ -9,23 +9,29 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 
-import static com.codeborne.selenide.Selenide.closeWebDriver;
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.logevents.SelenideLogger.addListener;
 import static io.qameta.allure.Allure.step;
 
 public class MobileTestBase {
+    String username = "Citilink@mail.ru",
+            password = "Citilink@mail.ru";
+
     @BeforeAll
-    public static void setup() {
-        String host = System.getProperty("deviceHost");
-        if (host.equals("localMobile")) {
+    public static void setup() throws Exception {
+
+        String deviceHost = System.getProperty("deviceHost");
+        if (deviceHost.equals("localMobile")) {
             Configuration.browser = MobileDriver.class.getName();
 
-        } else if (host.equals("realMobile")) {
+        } else if (deviceHost.equals("realMobile")) {
             Configuration.browser = MobileDriver.class.getName();
 
+        } else {
+            throw new Exception("Неверное окружение");
         }
         Configuration.browserSize = null;
+        System.out.println(deviceHost);
     }
 
     @BeforeEach
