@@ -58,6 +58,6 @@ gradle clean test -DdeviceHost=realMobile
 ### :chart_with_upwards_trend: Allure отчет :
 ---
 ![мобильные тесты](https://user-images.githubusercontent.com/90265199/204024593-6f5b0398-0075-4267-8222-713e44a8217d.png)
-<div>
-[3.webm](https://user-images.githubusercontent.com/90265199/208257436-e1935b6c-0318-46b2-a654-f59a5835fa3e.webm)
-</div>
+[gf[bvbcvx.webm](https://user-images.githubusercontent.com/90265199/208258403-5c6baebd-57dc-487b-9d53-b1c36492ec3a.webm)
+dgdf.webm](https://user-images.githubusercontent.com/90265199/208258381-2b338405-ba29-4b49-8739-33fb34fa2730.webm)
+[v v.webm](https://user-images.githubusercontent.com/90265199/208258415-96525f6e-b8f1-4dab-a38b-73bd70267384.webm)
