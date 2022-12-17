@@ -42,7 +42,7 @@
 2) Запусть Appium сервер
 3) Ввести в командную строку терминала команду
 ```javascript
-gradle clean test -DdeviceHost=local
+gradle clean test -DdeviceHost=localMobile
 ```
 
 - Запустить на реальном устройстве
@@ -52,7 +52,7 @@ gradle clean test -DdeviceHost=local
 4) Ввести в командную строку терминала команду
 
 ```javascript
-gradle clean test -DdeviceHost=real
+gradle clean test -DdeviceHost=realMobile
 ```
 
 ### :chart_with_upwards_trend: Allure отчет :
