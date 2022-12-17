@@ -60,13 +60,6 @@ public class MobilePage {
         return this;
     }
 
-    public MobilePage checkingNoAuthorisation() {
-        $$(AppiumBy.id("ru.citilink:id/textViewHeader"))
-                .shouldHave(CollectionCondition.texts("Войдите\n" +
-                        "или зарегистрируйтесь"));
-        return this;
-    }
-
     public MobilePage checkingAuthorisationFailed() {
         $$(AppiumBy.id("ru.citilink:id/snackbar_text"))
                 .shouldHave(CollectionCondition.texts("Неверный логин или пароль"));
