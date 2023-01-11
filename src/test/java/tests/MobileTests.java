@@ -1,5 +1,7 @@
 package tests;
 
+import com.codeborne.selenide.CollectionCondition;
+import io.appium.java_client.AppiumBy;
 import org.junit.jupiter.api.Test;
 import pages.MobilePage;
 
@@ -12,45 +14,30 @@ public class MobileTests extends MobileTestBase {
 
     @Test
     void checkUnregistration() {
-        step("Подтверждение города", () ->
-                mobilePage.acceptCity());
-        step("Переход в профиль,проверка, что пользователь не авторизован", () ->
-                mobilePage.
-                        goToProfile()
-                        .checkingUserIsNotRegistration());
-        step("Переход на страницу авторизации", () ->
-                mobilePage.goToAuthorisationByEmail()
-                        .checkingAuthorisationByEmail());
-        step("Проверка, что при авторизии с неверными логином и паролем, возникает ошибка", () ->
-                mobilePage.setUsername(username)
-                        .setPassword(password)
-                        .clickOnTheAuthButton()
-                        .checkingAuthorisationFailed());
-    }
-
-    @Test
-    void addProductToFavorite() {
         open();
-        step("Подтверждение города", () ->
-                mobilePage.acceptCity());
-        step("Проверка, что в избранном пусто", () ->
-                mobilePage.checkingThatFavoritesIsEmpty());
-        step("Находжение и добавление товара в избранное", () ->
-                mobilePage.searchAndAddProductInFavorites());
-        step("Проверка, что в избранном появился товар", () ->
-                mobilePage.checkingThatFavoritesIsNotEmpty());
-    }
+        $(AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.EditText[1]"))
+                .click();
+        $(AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.EditText[1]"))
+                .sendKeys("Anastasiaredcat@gmail.com");
+        $(AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.EditText[2]"))
+                .click();
+        $(AppiumBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View/android.view.View/android.view.View/android.view.View/android.widget.EditText[2]"))
+                .sendKeys("Ku!123456");
+        $(AppiumBy.xpath("//android.widget.Button[@content-desc=\"Войти\"]"))
+                .click();
+        $(AppiumBy.xpath("//android.widget.ImageView[@content-desc=\"Главная\"]"))
+                .click();
 
-    @Test
-    void addProductToCard() {
-        open();
-        step("Подтверждение города", () ->
-                mobilePage.acceptCity());
-        step("Проверка, что в корзине пусто", () ->
-                mobilePage.checkingThatCartIsEmpty());
-        step("Находжение и добавление товара в корзину", () ->
-                mobilePage.searchAndAddProductInCart());
-        step("Проверка, что в корзине появился товар", () ->
-                mobilePage.checkingThatCartIsNotEmpty());
+        $(AppiumBy.xpath("//android.widget.ImageView[@content-desc=\"Уведомления\"]"))
+                .click();
+        $(AppiumBy.xpath("//android.widget.ImageView[@content-desc=\"ТС\"]"))
+                .click();
+        $(AppiumBy.xpath("//android.widget.ImageView[@content-desc=\"Планы\"]"))
+                .click();
+        $(AppiumBy.xpath("//android.widget.ImageView[@content-desc=\"Чаты\"]"))
+                .click();
+       // $$(AppiumBy.id("ru.citilink:id/textEmptyTitle"))
+            //    .shouldHave(CollectionCondition.texts("В избранном пока пусто"));
+
     }
 }

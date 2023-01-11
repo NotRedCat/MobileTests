@@ -37,16 +37,15 @@ public class MobileDriver implements WebDriverProvider {
         options.setDeviceName(config.getDevice());
         options.setPlatformVersion(config.getOsVersion());
         options.setApp(app.getAbsolutePath());
-        options.setAppPackage("ru.citilink");
-        options.setAppActivity("ru.citilink.app.presentation.start.StartActivity");
+        options.setAppPackage("io.zveno.mobile");
+        options.setAppActivity("io.zveno.mobile.MainActivity");
 
         return new AndroidDriver(getAppiumServerUrl(), options);
     }
 
     private File getApp() {
-        String appUrl = "https://d.apkpure.com/b/APK/com.andromob.citilink?version=latest";
-        String appPath = "src/test/resources/app/Ситилинк v2_2.11.0_Apkpure.apk";
-
+        String appUrl = "";
+        String appPath = "src/test/resources/app/app-armeabi-v7a-release.apk";
         File app = new File(appPath);
         if (!app.exists()) {
             try (InputStream in = new URL(appUrl).openStream()) {

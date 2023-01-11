@@ -9,6 +9,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 
+import java.util.stream.Stream;
+
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.open;
 import static com.codeborne.selenide.logevents.SelenideLogger.addListener;
 import static io.qameta.allure.Allure.step;
@@ -20,7 +23,8 @@ public class MobileTestBase {
     @BeforeAll
     public static void setup() throws Exception {
 
-        String deviceHost = System.getProperty("deviceHost");
+        //String deviceHost = System.getProperty("deviceHost");
+        String deviceHost = "realMobile";
         if (deviceHost.equals("localMobile")) {
             Configuration.browser = MobileDriver.class.getName();
 
@@ -31,7 +35,6 @@ public class MobileTestBase {
             throw new Exception("Неверное окружение");
         }
         Configuration.browserSize = null;
-        System.out.println(deviceHost);
     }
 
     @BeforeEach

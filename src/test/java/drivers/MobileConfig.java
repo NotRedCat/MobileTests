@@ -16,11 +16,11 @@ public interface MobileConfig extends Config {
     public abstract String getURL();
 
     @Key("device")
-    @DefaultValue("Pixel 4 API 30")
+    @DefaultValue("34HDU20312004846")
     public abstract String getDevice();
 
     @Key("os_version")
-    @DefaultValue("11")
+    @DefaultValue("10")
     public abstract String getOsVersion();
 
     @Key("platform_name")
